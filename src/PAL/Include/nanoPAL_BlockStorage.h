@@ -175,31 +175,30 @@ typedef enum BlockRegionAttribute
 
     // Flash word size 64 bits
 
-    BlockRegionAttribute_ProgramWidthIs64bits = 0x0200,//8bytes
-    // Flash word size 128 bits
+    BlockRegionAttribute_ProgramWidthIs64bits = 0x0200, // 8bytes
+                                                        //  Flash word size 128 bits
     BlockRegionAttribute_ProgramWidthIs128bits = 0x0400,
     // Flash word size 256 bits
     BlockRegionAttribute_ProgramWidthIs256bits = 0x0800,
 
-    BlockRegionAttribute_ProgramWidthIs32bits = 0x0400,//4bytes
+    BlockRegionAttribute_ProgramWidthIs32bits = 0x0400, // 4bytes
 
-    BlockRegionAttribute_ProgramWidthIs128bits = 0x0800,//16bytes
+    BlockRegionAttribute_ProgramWidthIs128bits = 0x0800, // 16bytes
 
-    BlockRegionAttribute_ProgramWidthIs256bits = 0x1000,//32bytes
+    BlockRegionAttribute_ProgramWidthIs256bits = 0x1000, // 32bytes
 
-    BlockRegionAttribute_ProgramWidthIs512bits = 0x2000,//64bytes
+    BlockRegionAttribute_ProgramWidthIs512bits = 0x2000, // 64bytes
 
-    BlockRegionAttribute_ProgramWidthIs1024bits = 0x4000,//128bytes
+    BlockRegionAttribute_ProgramWidthIs1024bits = 0x4000, // 128bytes
 
+    BlockRegionAttribute_ProgramWidthIs4096bits = 0x10000, // 512bytes
 
-    BlockRegionAttribute_ProgramWidthIs4096bits = 0x10000,//512bytes
+    BlockRegionAttribute_ProgramWidthIs8192bits = 0x20000, // 1024bytes
 
-    BlockRegionAttribute_ProgramWidthIs8192bits = 0x20000,//1024bytes
+    BlockRegionAttribute_ProgramWidthIs16384bits = 0x40000, // 2048bytes
 
-    BlockRegionAttribute_ProgramWidthIs16384bits = 0x40000,//2048bytes
+    BlockRegionAttribute_ProgramWidthIs32768bits = 0x80000, // 4096bytes,such like:S32K144.4K/sector.
 
-    BlockRegionAttribute_ProgramWidthIs32768bits = 0x80000,//4096bytes,such like:S32K144.4K/sector.
-    
 } BlockRegionAttribute;
 
 typedef struct BLOCKREGIONINFO BlockRegionInfo;
